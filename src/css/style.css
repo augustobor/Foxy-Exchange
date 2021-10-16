@@ -30,8 +30,8 @@ header {
     text-align: center;
     justify-content: center;
     font-family: 'Alien Encounters', sans-serif;
-    background: linear-gradient(180.8deg, var(--soft-orange) 16.69%, var(--soft-purple) 100%);
-    height: 10rem;
+    background: linear-gradient(180.8deg, var(--dark-orange) 16.69%, var(--soft-purple) 100%);
+    height: 12rem;
     width: 100%;
     max-height: 30%;
 }
@@ -39,19 +39,25 @@ header {
 
 header h1 {
     font-size: 4rem;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     color: var(--just-white);
     font-weight: 500;
     text-shadow: var(--just-black);
 }
 
+
 .blackLine {
     border-color:  var(--just-black);
+    height: 0.6rem;
+    background-color: var(--just-black);
 }
 
+/*Sección 1*/
+
 .site-card--cryptos {
-    height: 30rem;
+    height: 80rem;
     padding: 4% 4%;
+    background: radial-gradient( var(--dark-purple),#2E1078);
     background-color: var(--dark-purple);
     text-align: center;
 }
@@ -60,10 +66,28 @@ header h1 {
     color: var(--just-white)
 }
 
-.litecoin {
-    background-image: url('/devImgs/LITE.svg');
+
+.main-exchange--subtitle {
+    margin: 1rem;
+    font-size: small;
 }
 
+
+
+.site-card--logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3.5rem 0;
+}
+
+.site-card--cryptos .site-card--card {
+    height: 30%;
+    margin: 5%;
+    width: 90%;
+    border-radius: 10px;
+    background: linear-gradient(145.8deg, var(--soft-purple) 16.69%, var(--dark-blue) 100%);
+}
 
 .orangeLine {
     border-color: var(--dark-orange);
