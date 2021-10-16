@@ -43,6 +43,7 @@ header h1 {
     color: var(--just-white);
     font-weight: 500;
     text-shadow: var(--just-black);
+    text-shadow: 4px 4px 1px var(--soft-purple);
 }
 
 
@@ -55,8 +56,10 @@ header h1 {
 /*Sección 1*/
 
 .site-card--cryptos {
-    height: 80rem;
+    height: auto;
+    width: 100%;
     padding: 4% 4%;
+    display: inline-block;
     background: radial-gradient( var(--dark-purple),#2E1078);
     background-color: var(--dark-purple);
     text-align: center;
@@ -69,26 +72,63 @@ header h1 {
 
 .main-exchange--subtitle {
     margin: 1rem;
-    font-size: small;
+    font-size: 1.8vh;
+    text-shadow: 1.2px 1.2px 0.6px var(--soft-purple);
 }
 
 
 
 .site-card--logos {
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    align-self: center;
     justify-content: center;
     margin: 3.5rem 0;
 }
 
 .site-card--cryptos .site-card--card {
-    height: 30%;
+    height: 31%;
     margin: 5%;
+    display:inline-block;
     width: 90%;
+    max-width: 1000px;
     border-radius: 10px;
     background: linear-gradient(145.8deg, var(--soft-purple) 16.69%, var(--dark-blue) 100%);
+    box-shadow: 0px 0px 3px var(--just-black);
+}
+
+.site-card--cryptos .site-card--card p {
+    font-size: large;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 3rem 0;
+    text-shadow: 0px 0px 5px var(--just-black);
+}
+
+.site-card--description1 {
+    text-align:left;
+    display: flex;
+    width: 100%;
+    font-family: 'Inherit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-shadow: 1.2px 1.2px 0.6px var(--soft-purple);
+    margin-top: 3rem; 
+}
+
+
+.site-card--description2 {
+    display: flex;
+    text-align: right;
+    font-size: 1.2rem;
+    font-family: 'Inherit', sans-serif;
+    font-weight: 100;
+    margin-top: 15rem;
+    text-shadow: 1.2px 1.2px 0.6px var(--soft-purple); 
+    width: 100%;
 }
 
 .orangeLine {
     border-color: var(--dark-orange);
+    margin-bottom: 5rem;
 }
