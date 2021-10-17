@@ -3,7 +3,7 @@
     <filter id="Polígono_13" x="0" y="0" width="89" height="79" filterUnits="userSpaceOnUse">
       <feOffset dy="3" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feFlood flood-color="#f0f0f0" flood-opacity="0.161"/>
+      <feFlood flood-color="#18066A" flood-opacity="0.161"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>

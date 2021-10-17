@@ -19,9 +19,9 @@
 html {
 	font-size: 62.5%;
 	font-family: 'inherir', 'Seoge UI', sans-serif;
-	scroll-behavior: smooth; /*Scroll más suave para el botón*/
-	/*font-family: 'Inter', sans-serif;*/
+	scroll-behavior: smooth; 
 }
+
 
 
 header {
@@ -53,7 +53,7 @@ header h1 {
     background-color: var(--just-black);
 }
 
-/*Sección 1*/
+/*first secton*/
 
 .site-card--cryptos {
     height: auto;
@@ -61,7 +61,6 @@ header h1 {
     padding: 4% 4%;
     display: inline-block;
     background: radial-gradient( var(--dark-purple),#2E1078);
-    background-color: var(--dark-purple);
     text-align: center;
 }
 
@@ -102,7 +101,7 @@ header h1 {
     text-align: center;
     font-weight: bold;
     margin: 3rem 0;
-    text-shadow: 0px 0px 5px var(--just-black);
+    text-shadow: 2px 2px 5px var(--just-black);
 }
 
 .site-card--description1 {
@@ -131,4 +130,87 @@ header h1 {
 .orangeLine {
     border-color: var(--dark-orange);
     margin-bottom: 5rem;
+}
+
+
+
+/*second secton*/
+
+.site-second {
+    height: auto;
+    padding: 4% 4%;
+    width: 100%;
+    background: linear-gradient(145.8deg, var(--soft-blue) 16.69%, var(--soft-purple) 100%);
+    display: inline-block;
+    text-align: center;
+}
+
+.site-second .site-second--triangles {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.6rem;
+}
+
+.site-second--card {
+    height: 30%;
+    margin-top: 1rem;
+    margin-bottom: 3.4rem;
+    display:inline-block;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 10px;
+    background: #3216ac;
+    box-shadow: 0px 0px 3px var(--just-black);
+    padding: 5% 5%;
+}
+
+.site-second--card p {
+    font-size: medium;
+    font-weight:bold;
+    color: var(--just-white);
+    text-shadow: 1.2px 1.2px 5px var(--soft-purple);
+}
+
+.site-second--card .bitcoin {
+    color: var(--soft-orange);
+}
+
+.site-second--card .ethereum {
+    color: var(--just-black);
+    text-shadow: 0px 0px 3px var(--just-black);
+}
+.site-second--card .cardano {
+    color: var(--soft-blue);
+    text-shadow: 0px 0px 3px var(--dark-purple);
+}
+.site-second--card .solana {
+    color: var(--soft-purple);
+    text-shadow: 0px 0px 3px var(--dark-purple);
+}
+
+.site-second--button {
+    width: 60%;
+    max-width: 210px;
+    padding-top: 0.5%;
+    height: 3rem;
+    border-radius: 6px;
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 4rem;
+    background: linear-gradient(100deg, var(--soft-orange) 16.69%, var(--dark-purple) 100%);
+    color: var(--just-white);
+    font-size: medium;
+    box-shadow: 0px 0px 5px var(--just-black);
+    text-shadow: 0px 0px 5px var(--just-black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.site-second--text {
+    font-size: small;
+    font-weight: 300;
+    font-family: 'Inherit', sans-serif;
+    color: var(--just-white);
+    text-shadow: 0px 0px 5px var(--just-black);
+    margin: 5rem 0;
 }
