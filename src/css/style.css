@@ -49,6 +49,7 @@ header h1 {
 
 .blackLine {
     border-color:  var(--just-black);
+    border-style: none;
     height: 0.6rem;
     background-color: var(--just-black);
 }
@@ -71,7 +72,7 @@ header h1 {
 
 .main-exchange--subtitle {
     margin: 1rem;
-    font-size: 1.8vh;
+    font-size: 1.5rem;
     text-shadow: 1.2px 1.2px 0.6px var(--soft-purple);
 }
 
@@ -129,6 +130,7 @@ header h1 {
 
 .orangeLine {
     border-color: var(--dark-orange);
+    height: 0.2rem;
     margin-bottom: 5rem;
 }
 
@@ -188,7 +190,7 @@ header h1 {
     text-shadow: 0px 0px 3px var(--dark-purple);
 }
 
-.site-second--button {
+.site--button {
     width: 60%;
     max-width: 210px;
     padding-top: 0.5%;
@@ -213,4 +215,119 @@ header h1 {
     color: var(--just-white);
     text-shadow: 0px 0px 5px var(--just-black);
     margin: 5rem 0;
+}
+
+
+/*third secton*/
+
+.third-section {
+    height: auto;
+    padding: 4% 4%;
+    width: 100%;
+    background: linear-gradient(220.8deg, var(--dark-purple) 16.69%, var(--soft-orange) 100%);
+    display: inline-block;
+    text-align: center;
+}
+
+.third-section--currency-card {
+    height: 31%;
+    margin-top: 9rem;
+    display:inline-block;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+    background: radial-gradient(var(--soft-purple),var(--dark-purple));
+    box-shadow: 0px 0px 3px var(--just-black);
+}
+
+.third-section--currency-card h2 {
+    font-size: x-large;
+    display: inline-block;
+    width: 70%;
+    max-width: 500px;
+    color: var(--just-white);
+    border-radius: 7px;
+    background: linear-gradient(220.8deg, var(--dark-purple) 16.69%, var(--soft-purple) 100%);
+    margin: 2rem 2rem 2rem 4rem;
+    padding: 2%;
+    box-shadow: 0px 0px 3px var(--just-black);
+}
+
+.third-section--currency-card--input {
+    height: 31%;
+    margin: 2%;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+}
+
+.third-section--currency-card--input .currencies {
+    width: 27%;
+    margin-left: 4%;
+    border-style: none;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 0px 3px var(--just-black);
+    background: linear-gradient(180.8deg, var(--dark-orange) 16.69%, var(--soft-purple) 100%);
+    height:4rem;
+    color: var(--just-black);
+    padding: 2%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight:900;
+    font-size:1.5rem;
+}
+
+.third-section--currency-card--input #amount {
+    width: 75%;
+    align-self: center;
+    height:2.5rem;
+    border-style: none;
+    background-color: var(--dark-purple);
+    text-align: left;
+    padding: 2%;
+    padding-left: 8%;
+    font-size: medium;
+    color:#dbd8e9;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 0px 2px 2px 0px;
+    text-shadow: 0px 0px 3px var(--just-black);
+}
+
+
+.third-section p {
+    margin-top: 6rem;
+    color: var(--just-white);
+    font-size: smaller;
+    font-weight: 100;
+    text-align: left;
+    text-shadow: 0px 0px 3px var(--just-black);
+}
+
+
+#exchangeButton {
+    margin-top: 3.5rem;
+    height: 4rem;
+    width: 68%;
+    align-self: center;
+    padding: 1.4%;
+    font-size: large;
+    color: var(--just-white);
+    font-style: italic; 
+    font-weight: bolder;
+    text-shadow: var(--just-black);
+    text-shadow: 2px 2px 1px var(--soft-purple);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* footer */
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Inherit', sans-serif;
+    background: linear-gradient(180.8deg, var(--soft-orange) 16.69%, var(--just-black) 100%);
+    height: 12rem;
+    width: 100%;
+    max-height: 30%;
 }
