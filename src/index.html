@@ -8,6 +8,27 @@
     <title>Foxy Exchange</title>
 </head>
 <body>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "🦊 Bienvenido al sitio web Foxy exchange donde se puede comprar y cambiar Bitcoin sin limites.",
+          "image": "",  
+          "author": {
+            "@type": "Person",
+            "name": "Augusto Borromeo"
+          },  
+          "publisher": {
+            "@type": "Organization",
+            "name": "",
+            "logo": {
+              "@type": "ImageObject",
+              "url": ""
+            }
+          },
+          "datePublished": ""
+        }
+    </script>
     <header>
         <h1><i>Foxy Exchange</i></h1>
     </header>
@@ -16,9 +37,9 @@
         <section class="site-card--cryptos">
             <P class="main-exchange--subtitle"><u>swap, trade and exchange.</u></P>
             <div class="site-card--logos"> <!--Cryptos-->
-                <img src="../devImgs/LITE.svg">
-                <img src="../devImgs/Bitcoin logo.svg">
-                <img src="../devImgs/whiteEth.svg">
+                <img src="../devImgs/LITE.svg" alt ="lite coin image">
+                <img src="../devImgs/Bitcoin logo.svg" alt ="bitcoin image">
+                <img src="../devImgs/whiteEth.svg" alt = "eth image">
             </div>
             <article class="site-card--card">
                 <p>🦊 Bienvenido al sitio web Foxy 
@@ -32,31 +53,35 @@
                 </p>
             </article>
             <div class="site-card--logos"> <!--Cryptos-->
-                <img src="../devImgs/Ripple Logo.svg">
-                <img src="../devImgs/neo.svg">
-                <img src="../devImgs/BinanceCoin.svg">
+                <img src="../devImgs/Ripple Logo.svg" alt ="xrp image">
+                <img src="../devImgs/neo.svg" alt ="neo image">
+                <img src="../devImgs/BinanceCoin.svg" alt ="binance image">
             </div>
             <div class="site-card--description1"> <!--first text-->
-                <p>Ofrecemos a los usuarios que empiezan 
-                    en este ecosistema una forma 
-                    segura, fácil, sencilla, amigable y sin rodeos 
-                    de intercambiar criptodivisas.</p>
-                    <img src="../devImgs/ethLogo.svg">
+                <article>
+                    <p>Ofrecemos a los usuarios que empiezan 
+                        en este ecosistema una forma 
+                        segura, fácil, sencilla, amigable y sin rodeos 
+                        de intercambiar criptodivisas.</p>
+                        <hr class="orangeLine">
+                </article> 
+                <img src="../devImgs/ethLogo.svg" alt ="big eth logo"> 
             </div>
-            <hr class="orangeLine">
             <div class="site-card--description2"> <!--second text-->
-                <img src="../devImgs/Bitcoin logo.svg">
-                <p>Se parte como usuario de internet de la nueva transformación cripto. 
-                    Usa tu dinero sin intermediarios. Nada de controles, ni comisiones. 
-                    Tu dinero es simplemente tuyo.</p>
+                <img src="../devImgs/Bitcoin logo.svg" alt ="big bitcoin logo">
+                <article>
+                    <p>Se parte como usuario de internet de la nueva transformación cripto. 
+                        Usa tu dinero sin intermediarios. Nada de controles, ni comisiones. 
+                        Tu dinero es simplemente tuyo.</p>
+                        <hr class="orangeLine">
+                </article>
             </div>
-            <hr class="orangeLine">
         </section> <!--purple section-->
         <section class="site-second">
             <div class="site-second--triangles">
-                <img src="../devImgs/upTriangle.svg">
-                <img src="../devImgs/triangDown.svg">
-                <img src="../devImgs/upTriangle.svg">
+                <img src="../devImgs/upTriangle.svg" alt = "a triangle">
+                <img src="../devImgs/triangDown.svg" alt = "a triangle">
+                <img src="../devImgs/upTriangle.svg" alt = "a triangle">
             </div>
             <article class="site-second--card">
                 <p>💸Compra tus primeras divisas como 
@@ -85,7 +110,7 @@
         <section class="third-section">
             <div class="third-section--currency-card">
                 <h2>Exchange</h2>
-                <div class="third-section--currency-card--input">
+                <div class="third-section--currency-card--bar">
                     <input list="currencies" class="currencies">
                     <datalist id="currencies">
                         <option value="BTC"></opcion>
@@ -95,16 +120,10 @@
                     </datalist>
                     <input type="number" id="amount" placeholder="">
                 </div>
-                <img src="../devImgs/eq.svg">
-                <div class="third-section--currency-card--input">
-                    <input list="currencies" class="currencies">
-                    <datalist id="currencies">
-                        <option value="BTC"></opcion>
-                        <option value="ETH"></option>
-                        <option value="ADA"></option>
-                        <option value="SOL"></option>
-                    </datalist>
-                    <input type="number" id="amount" placeholder="">
+                <img src="../devImgs/eq.svg" alt = "equal image">
+                <div class="third-section--currency-card--bar">
+                    <p class="currencies"></p>
+                    <p id="amount"></p>
                 </div>
                 <a id="exchangeButton"href="#" class="site--button"> 
                     Cambiar Divisas ✅
@@ -129,7 +148,7 @@
             Desarrollado por:
         </p>
         <div class="footer--github">
-            <img src="../devImgs/github.svg">
+            <img src="../devImgs/github.svg" alt ="github logo">
             <a target="_blank" href="https://github.com/augustobor" class="footer--github-button-profile">Augusto Borromeo</a>
         </div>
         <div class="footer--repository">
@@ -137,5 +156,8 @@
             <p><i>*Foxy Exchange 2021</i></p>
         </div>
     </footer> <!--orange footer-->
+    <script src="index.js">
+        
+    </script>
 </body>
 </html>
