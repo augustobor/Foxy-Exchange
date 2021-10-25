@@ -12,7 +12,8 @@
         {
           "@context": "https://schema.org",
           "@type": "BlogPosting",
-          "headline": "🦊 Bienvenido al sitio web Foxy exchange donde se puede comprar y cambiar Bitcoin sin limites.",
+          "headline": "🦊 Welcome to Foxy exchange web site. 
+          A place where you can buy and exchange Bitcoin without limits. ",
           "image": "",  
           "author": {
             "@type": "Person",
@@ -42,14 +43,11 @@
                 <img src="../devImgs/whiteEth.svg" alt = "eth image">
             </div>
             <article class="site-card--card">
-                <p>🦊 Bienvenido al sitio web Foxy 
-                    exchange donde se puede 
-                    comprar y cambiar Bitcoin 
-                    sin limites. 
+                <p>🦊 Welcome to Foxy exchange web site. 
+                    A place where you can buy and exchange Bitcoin without limits. 
                 </p>
                 <p>   
-                    🔥 Donde el poder de
-                     tu dinero es tuyo. 
+                    🔥 Where money power is yours. 
                 </p>
             </article>
             <div class="site-card--logos"> <!--Cryptos-->
@@ -59,10 +57,10 @@
             </div>
             <div class="site-card--description1"> <!--first text-->
                 <article>
-                    <p>Ofrecemos a los usuarios que empiezan 
-                        en este ecosistema una forma 
-                        segura, fácil, sencilla, amigable y sin rodeos 
-                        de intercambiar criptodivisas.</p>
+                    <p>We offer users who are beggining 
+                        on this ecosystem a safe, 
+                        easy, simple and friendly 
+                        way to exachange cryptocurrences.</p>
                         <hr class="orangeLine">
                 </article> 
                 <img src="../devImgs/ethLogo.svg" alt ="big eth logo"> 
@@ -70,9 +68,10 @@
             <div class="site-card--description2"> <!--second text-->
                 <img src="../devImgs/Bitcoin logo.svg" alt ="big bitcoin logo">
                 <article>
-                    <p>Se parte como usuario de internet de la nueva transformación cripto. 
-                        Usa tu dinero sin intermediarios. Nada de controles, ni comisiones. 
-                        Tu dinero es simplemente tuyo.</p>
+                    <p>Participate as internet user in the new crypto transformation. 
+                        Use your cash without intemedians. 
+                        No controls, no comisions. 
+                        Your cash is simply your cash.</p>
                         <hr class="orangeLine">
                 </article>
             </div>
@@ -84,26 +83,25 @@
                 <img src="../devImgs/upTriangle.svg" alt = "a triangle">
             </div>
             <article class="site-second--card">
-                <p>💸Compra tus primeras divisas como 
+                <p>💸Buy your first badges as 
                     <b class="bitcoin">bitcoin, </b><b class="ethereum">ethereum, </b>
                     <b class="cardano">cardano, </b>o <b class="solana">solana</b>  
-                    en cuestión de minutos.
+                    in only minutes and without restrictions.
                 </p>
             </article>
             <article class="site-second--card">
-                <p>💱 Cambia tus divisas sin pagos extras 
-                    bajo seguridad. 
+                <p>💱 Change cryptocurrences without extra payments under secure. 
                 </p>
             </article>
             <a href="#exchangeButton" class="site--button"> 
-                ✨Ir al Exchange✨  
+                ✨Go to Exchange✨  
             </a>
             <hr class="orangeLine">
-            <p class="site-second--text">Como en toda innovación no estamos exentos de problemas. 
-                Sin embargo, el ecosistema cada vez es más fuerte y confiable     
+            <p class="site-second--text">As all innovation we are not excents to problemas. Despite this, 
+                crypto ecosystem is being more stronger and trustworthy     
             </p>
-            <p class="site-second--text"><i>"No se puede descubrir grandes océanos a menos que 
-                tenga el coraje de perder de vista la costa" André Gide</i></p>
+            <p class="site-second--text"><i>"You can't discover great oceans unless you have 
+                the courage to lose sight of the shoreline" André Gide</i></p>
             <hr class="orangeLine">
         </section> <!--cold standard section-->
 
@@ -111,53 +109,60 @@
             <div class="third-section--currency-card">
                 <h2>Exchange</h2>
                 <div class="third-section--currency-card--bar">
-                    <input list="currencies" class="currencies">
+                    <input list="currencies" id="currencies--input"/>
                     <datalist id="currencies">
                         <option value="BTC"></opcion>
                         <option value="ETH"></option>
                         <option value="ADA"></option>
                         <option value="SOL"></option>
                     </datalist>
-                    <input type="number" id="amount" placeholder="">
+                    <input id="amount" type="number"/>
                 </div>
-                <img src="../devImgs/eq.svg" alt = "equal image">
-                <div class="third-section--currency-card--bar">
-                    <p class="currencies"></p>
-                    <p id="amount"></p>
-                </div>
-                <a id="exchangeButton"href="#" class="site--button"> 
-                    Cambiar Divisas ✅
+                <!-- <img src="../devImgs/eq.svg" alt = "equal image"> -->
+                <a id="equalButton" onclick="showPrice()" class="site--button"> 
+                    =
                 </a>
+                <div class="third-section--currency-card--bar">
+                    <input list="currenciesOutput" id="currencies--output"/>
+                    <datalist id="currenciesOutput">
+                        <option value="BTC"></opcion>
+                        <option value="ETH"></option>
+                        <option value="ADA"></option>
+                        <option value="SOL"></option>
+                    </datalist>
+                    <p id="result"></p>
+                </div>
+                <a id="exchangeButton" onclick="exchangeCryptos()" class="site--button"> 
+                    <i>Change cryptos ✅</i>
+                </a>
+                <p id ="message"></p>
             </div>
             <p>
-                disclaimer: comprar de cualquier divisa siempre se encuentra en 
-                un marco legal. Todas tus transacciones quedan almacenadas de 
-                forma pública, anónima y se pueden verificar en un sistema 
-                llamado Blockchain. 
+                disclaimer: buy any cryptocurrence is legal. 
+                All your crypto transactions are store anonimate and publicly. 
+                You could verify in a system called Blockchain. 
             </p>
         </section> <!--high standard section-->
     </main>
     <footer>
         <article class="footer--links">
-            <p> Links de papers para más información: </p>
+            <p> More information: </p>
 
             <a target="_blank" href="https://bitcoin.org/files/bitcoin-paper/bitcoin_es_latam.pdf">📔Bitcoin paper | </a>
             <a target="_blank" href="https://ethereum.org/en/whitepaper/">📕Ethereum paper</a>
         </article>
         <p class="footer--by">
-            Desarrollado por:
+            Developed by:
         </p>
         <div class="footer--github">
             <img src="../devImgs/github.svg" alt ="github logo">
             <a target="_blank" href="https://github.com/augustobor" class="footer--github-button-profile">Augusto Borromeo</a>
         </div>
         <div class="footer--repository">
-            <a target="_blank" href="#" class="footer--github-button-repository">Ver repositorio</a>
+            <a target="_blank" href="#" class="footer--github-button-repository">Go to repository</a>
             <p><i>*Foxy Exchange 2021</i></p>
         </div>
     </footer> <!--orange footer-->
-    <script src="index.js">
-        
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>
