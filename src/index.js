@@ -1,11 +1,24 @@
 
 
-const currencies = ['BTC', 'SOL', 'ETH', 'ADA']
+const currencies = [
+    {
+        id: 'BTC',
+        price: 62000
+    },
+    { 
+        id: 'SOL',
+        price: 200,
+    },
+    {  
+        id: 'ETH',
+        price: 4000,
+    },
+    { 
+        id: 'ADA',
+        price: 2,
+    }
+]
 
-currencies[0] = 62000
-currencies[1] = 200
-currencies[2] = 4000
-currencies[3] = 2
 
 
 function showPrice() {
@@ -13,26 +26,34 @@ function showPrice() {
     const currencyAmountID = document.getElementById("amount")
     const currencyAmountValue = currencyAmountID.value
     
-    const currencyListID = document.getElementById("currencies--output")
-    const currencyListValue = currencyListID.value;
+    const currencyListInputID = document.getElementById("currencies--input")
+    const currencyListInputValue = currencyListInputID.value;
 
-    console.log(currencyListValue)
+
+    const currencyListOutputID = document.getElementById("currencies--output")
+    const currencyListOutputValue = currencyListOutputID.value;
+
+
     const currencyResultID = document.getElementById("result")
 
-    const currencyPrice = currencies[currencies.findIndex(item => item = currencyListValue)]
-    console.log(currencyPrice)
 
-    currencyResultID.innerHTML= currencyAmountValue/currencyPrice   
+    const indexCurrencyInput = currencies.findIndex(item => item.id == currencyListInputValue)
+    const indexCurrencyOutput = currencies.findIndex(item => item.id == currencyListOutputValue)
+
+
+    const currencyPriceInput = currencies[indexCurrencyInput].price
+    const currencyPriceOutput = currencies[indexCurrencyOutput].price
+
+    currencyResultID.innerHTML= (currencyAmountValue*currencyPriceInput)/currencyPriceOutput   
 }
 
 function exchangeCryptos() {
     
     const result = document.getElementById("result")
-    const resultValue = result.value
     const currencyMessageID = document.getElementById("message")
 
-    console.log(resultValue)
-    if (resultValue) {
+    console.log(result)
+    if (result.innerHTML) {
      
         currencyMessageID.innerHTML ="🎉 Exchange completed!"
     }else {
