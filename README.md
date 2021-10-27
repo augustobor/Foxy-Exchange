@@ -33,5 +33,5 @@
 
 ## 💪 Another skills used 
 
-- 📝 Copywriting
-- 🔍 Seo
+- #### 📝 Copywriting
+- #### 🔍 Seo
