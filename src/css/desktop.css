@@ -2,6 +2,10 @@ header h1 {
     font-size: 10rem;
 }
 
+.site-card--logos > img {
+    display: none;
+}
+
 .site-card--cryptos p, .site-second--text {
     font-size: 4rem;
 }

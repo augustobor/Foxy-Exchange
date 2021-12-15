@@ -2,8 +2,19 @@ header h1 {
     font-size: 6rem;
 }
 
+.site-card--logos > img {
+    width: 32%;
+    height: 32%;
+}
+
 .site-card--description1 article, .site-card--description2 article {
     margin: 0 10%;
+}
+ 
+
+.site-card--description2 img, .site-card--description1 img {
+    width: 80%;
+    height: 80%;
 }
 
 .site-card--cryptos p, .site-second--text {
