@@ -5,31 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/tablet.css" media="screen and (min-width: 500px)">
+    <link rel="stylesheet" type="text/css" href="./css/desktop.css" media="screen and (min-width: 1000px)">
     <title>Foxy Exchange</title>
 </head>
 <body>
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "headline": "🦊 Welcome to Foxy exchange web site. 
-          A place where you can buy and exchange Bitcoin without limits. ",
-          "image": "",  
-          "author": {
-            "@type": "Person",
-            "name": "Augusto Borromeo"
-          },  
-          "publisher": {
-            "@type": "Organization",
-            "name": "",
-            "logo": {
-              "@type": "ImageObject",
-              "url": ""
-            }
-          },
-          "datePublished": ""
-        }
-    </script>
     <header>
         <h1><i>Foxy Exchange</i></h1>
     </header>
@@ -82,12 +62,14 @@
                 <img src="../devImgs/triangDown.svg" alt = "a triangle">
                 <img src="../devImgs/upTriangle.svg" alt = "a triangle">
             </div>
+
             <article class="site-second--card">
                 <p>💸Buy your first badges as 
                     <b class="bitcoin">bitcoin, </b><b class="ethereum">ethereum, </b>
                     <b class="cardano">cardano, </b>o <b class="solana">solana</b>  
                     in only minutes and without restrictions.
                 </p>
+
             </article>
             <article class="site-second--card">
                 <p>💱 Change cryptocurrences without extra payments under secure. 
@@ -130,7 +112,7 @@
                         <option value="ADA"></option>
                         <option value="SOL"></option>
                     </datalist>
-                    <p id="result"></p>
+                    <p id="result">0</p>
                 </div>
                 <a id="exchangeButton" onclick="exchangeCryptos()" class="site--button"> 
                     <i>Change cryptos ✅</i>
@@ -159,10 +141,11 @@
             <a target="_blank" href="https://github.com/augustobor" class="footer--github-button-profile">Augusto Borromeo</a>
         </div>
         <div class="footer--repository">
-            <a target="_blank" href="#" class="footer--github-button-repository">Go to repository</a>
+            <a target="_blank" href="https://github.com/augustobor/Foxy-Exchange" class="footer--github-button-repository">Go to repository</a>
             <p><i>*Foxy Exchange 2021</i></p>
         </div>
     </footer> <!--orange footer-->
     <script src="./index.js"></script>
+    <script type="./application/ld+json" src="./SEO.json"></script>
 </body>
 </html>

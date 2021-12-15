@@ -1,0 +1,21 @@
+header h1 {
+    font-size: 6rem;
+}
+
+.site-card--description1 article, .site-card--description2 article {
+    margin: 0 10%;
+}
+
+.site-card--cryptos p, .site-second--text {
+    font-size: large;
+}
+
+.third-section > p{
+    font-size: medium;
+}
+
+.third-section--currency-card--bar #amount, .third-section--currency-card--bar #result {
+    font-size: x-large;
+}
+
+

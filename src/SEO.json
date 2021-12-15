@@ -1,0 +1,19 @@
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "🦊 Welcome to Foxy exchange web site. A place where you can buy and exchange Bitcoin without limits. ",
+    "image": "",  
+    "author": {
+      "@type": "Person",
+      "name": "Augusto Borromeo"
+    },  
+    "publisher": {
+      "@type": "Organization",
+      "name": "",
+      "logo": {
+        "@type": "ImageObject",
+        "url": ""
+      }
+    },
+    "datePublished": ""
+}
