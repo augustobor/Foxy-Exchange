@@ -1,0 +1,52 @@
+header h1 {
+    font-size: 10rem;
+}
+
+.site-card--cryptos p, .site-second--text {
+    font-size: 4rem;
+}
+
+
+.site-card--description1 article, .site-card--description2 article {
+    margin: 0 15%;
+}
+
+.site-card--description1 img, .site-card--description2 img {
+    display: none;
+}
+
+
+.site-card--cryptos .site-card--card > p, .site-second--card > p {
+    font-size: 4rem;
+}
+
+.site--button {
+    font-size: 3rem;
+}
+
+.third-section--currency-card h2 {
+    font-size: 6rem;
+}
+
+.third-section > p {
+    font-size: large;
+}
+
+.site-second--text {
+    margin: 12rem 0;
+}
+
+
+
+
+.third-section--currency-card--bar #currencies--input, .third-section--currency-card--bar #currencies--output,.third-section--currency-card--bar #amount,.third-section--currency-card--bar #result {
+    font-size: xx-large;
+}
+
+footer p, footer .footer--by, footer .footer--github a, footer .footer--repository a, .footer--links > p {
+	font-size: 3rem;
+}
+
+.footer--links > a, .third-section--currency-card #message {
+    font-size: 2rem;
+}
