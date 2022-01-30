@@ -1,13 +1,13 @@
 {
-  "name": "FoxyExchange",
+  "name": "foxy-exchange",
   "version": "1.0.0",
   "description": "- The first section has a brief introduction of the website and his offer.\r - We are focus on the new crypto public. Persons who are not exerimented with the crypto ecosystem",
   "main": "index.js",
   "scripts": {
-    "build": "vue-cli-service build"
+    "build": "echo hi"
   },
   "dependencies": {
-    "vue":"^3.0.0"
+    "vue": "^3.2.29"
   },
   "repository": {
     "type": "git",
