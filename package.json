@@ -1,23 +1,23 @@
 {
-  "name": "foxy-exchange",
+  "name": "FoxyExchange",
   "version": "1.0.0",
   "description": "- The first section has a brief introduction of the website and his offer.\r - We are focus on the new crypto public. Persons who are not exerimented with the crypto ecosystem",
   "main": "index.js",
   "scripts": {
-    "build": "start"
-  },
-  "dependencies": {
-    "vue": "^3.2.29"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/augustobor/Foxy-Exchange.git"
   },
   "keywords": [],
-  "author": "augusto",
+  "author": "Augusto",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/augustobor/Foxy-Exchange/issues"
   },
-  "homepage": "https://github.com/augustobor/Foxy-Exchange#readme"
+  "homepage": "https://github.com/augustobor/Foxy-Exchange#readme",
+  "dependencies": {
+    "node-modules": "^1.0.1"
+  }
 }
