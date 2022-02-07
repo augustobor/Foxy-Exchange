@@ -44,7 +44,7 @@ function showPrice() {
     const currencyPriceInput = currencies[indexCurrencyInput].price
     const currencyPriceOutput = currencies[indexCurrencyOutput].price
 
-    currencyResultID.innerHTML= (currencyAmountValue*currencyPriceInput)/currencyPriceOutput   
+    currencyResultID.innerHTML= ((currencyAmountValue*currencyPriceInput)/currencyPriceOutput).toFixed(2)
 }
 
 function exchangeCryptos() {
@@ -53,8 +53,7 @@ function exchangeCryptos() {
     const currencyMessageID = document.getElementById("message")
 
     console.log(result)
-    if (result.innerHTML) {
-     
+    if (result.innerHTML != 0) {
         currencyMessageID.innerHTML ="🎉 Exchange completed!"
     }else {
         currencyMessageID.innerHTML ="We had a problem :C"

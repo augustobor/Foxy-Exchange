@@ -2,9 +2,27 @@ header h1 {
     font-size: 6rem;
 }
 
+.main-exchange--subtitle {
+    margin-bottom: 10rem;
+}
+
+.site-card--logos {
+    display: flex;
+    justify-content: space-between;
+    margin: 3.5rem 25%;
+}
+
 .site-card--logos > img {
-    width: 32%;
-    height: 32%;
+    transform: scale(1.6);
+}
+
+.site-card--card p {
+    font-size: xx-large;
+    padding: 2%;
+}
+
+.site-card--description1 {
+    margin-top: 10rem;
 }
 
 .site-card--description1 article, .site-card--description2 article {
@@ -13,13 +31,25 @@ header h1 {
  
 
 .site-card--description2 img, .site-card--description1 img {
-    width: 80%;
-    height: 80%;
+    transform: scale(1.8);
 }
 
 .site-card--cryptos p, .site-second--text {
     font-size: large;
 }
+
+
+/*Second*/
+
+.site-second .site-second--triangles img {
+    transform: scale(1.5);
+}
+
+.site-second--card p {
+    font-size: x-large;
+}
+
+/*Third*/
 
 .third-section > p{
     font-size: medium;
@@ -29,4 +59,32 @@ header h1 {
     font-size: x-large;
 }
 
+#currencies--input, #currencies--output {
+    font-size: x-large;
+}
 
+
+/*Footer*/
+
+
+.footer--links p {
+    font-size: xx-large;
+}
+
+.footer--links a {
+    font-size: x-large;
+}
+
+.footer--by {
+    font-size: x-large;
+}
+
+.footer--github a {
+    font-size: x-large;
+}
+
+
+
+.footer--repository {
+    font-size: x-large;
+}
