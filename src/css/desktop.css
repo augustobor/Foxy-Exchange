@@ -49,6 +49,11 @@ header h1 {
 }
 
 
+.third-section--currency-card {
+    margin-top: 3rem;
+    width: 50%;
+}
+
 .third-section--currency-card--bar #currencies--input, .third-section--currency-card--bar #currencies--output,.third-section--currency-card--bar #amount,.third-section--currency-card--bar #result {
     font-size: xx-large;
 }
