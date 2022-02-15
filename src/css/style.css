@@ -294,12 +294,15 @@ header h1 {
     background: linear-gradient(180.8deg, var(--dark-orange) 16.69%, var(--soft-purple) 100%);
     height: auto;
     color: var(--just-white);
-    text-shadow: 2px 2px 1px var(--soft-purple);
     padding: 2%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    font-weight:900;
+    font-weight:500;
     font-size:1.5rem;
+}
+
+option {
+    background-color: var(--just-black);
 }
 
 #currencies--input::placeholder, #currencies--output::placeholder {
@@ -370,7 +373,7 @@ footer {
     font-weight: 400;
 }
 
-.footer--links p {
+.footer--links h3 {
     font-size: large;
     margin-bottom: 1.5rem;
 }

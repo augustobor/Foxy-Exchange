@@ -16,7 +16,7 @@
     <hr class="blackLine">
     <main>
         <section class="site-card--cryptos">
-            <P class="main-exchange--subtitle"><u>swap, trade and exchange.</u></P>
+            <p class="main-exchange--subtitle"><u>swap, trade and exchange.</u></p>
             <div class="site-card--logos"> <!--Cryptos-->
                 <img src="./devImgs/LITE.svg" alt ="lite coin image">
                 <img src="./devImgs/Bitcoin logo.svg" alt ="bitcoin image">
@@ -92,28 +92,26 @@
                 <h2>Exchange</h2>
                 <form oninput="input">
                     <div class="third-section--currency-card--bar">
-                        <input list="currencies" id="currencies--input" name="input" placeholder="BTC"/>
-                        <datalist id="currencies">
-                            <option value="BTC"></opcion>
-                            <option value="ETH"></option>
-                            <option value="ADA"></option>
-                            <option value="SOL"></option>
-                        </datalist>
+                        
+                        <select id="currencies--input" placeholder="BTC" name="input">
+                            <option value="BTC">BTC</opcion>
+                            <option value="ETH">ETH</option>
+                            <option value="ADA">ADA</option>
+                            <option value="SOL">SOL</option>
+                        </select>
                         <input id="amount" type="number"/>
                     </div>
                     <a id="equalButton" onclick="showPrice()" class="site--button"> 
                         Convert
                     </a>
                     <div class="third-section--currency-card--bar">
-                        <input list="currenciesOutput" id="currencies--output" placeholder="ETH"/>
-                        <datalist id="currenciesOutput">
-                            <option value="BTC"></opcion>
-                            <option value="ETH"></option>
-                            <option value="ADA"></option>
-                            <option value="SOL"></option>
-                        </datalist>
+                        <select id="currencies--output" placeholder="BTC" name="output">
+                            <option value="BTC">BTC</opcion>
+                            <option value="ETH">ETH</option>
+                            <option value="ADA">ADA</option>
+                            <option value="SOL">SOL</option>
+                        </select>
                         <output id="result">0.0</output>
-                        <!-- <p id="result">0</p> -->
                     </div>
                 </form>
                 <a id="exchangeButton" onclick="exchangeCryptos()" class="site--button"> 
@@ -132,15 +130,15 @@
     </main>
     <footer>
         <article class="footer--links">
-            <p> More information: </p>
+            <h3> More information: </h3>
             <div>
                 <a target="_blank" href="https://bitcoin.org/files/bitcoin-paper/bitcoin_es_latam.pdf">📔 Bitcoin paper</a>
                 <a target="_blank" href="https://ethereum.org/en/whitepaper/">📕 Ethereum paper</a>
             </div>
         </article>
-        <p class="footer--by">
+        <h3 class="footer--by">
             Developed by:
-        </p>
+        </h3>
 
         <address>
 

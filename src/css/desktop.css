@@ -58,7 +58,7 @@ header h1 {
     font-size: xx-large;
 }
 
-footer p, footer .footer--by, footer .footer--github a, footer .footer--repository a, .footer--links > p {
+footer p, footer .footer--by, footer .footer--github a, footer .footer--repository a, .footer--links > h3 {
 	font-size: 3rem;
 }
 
