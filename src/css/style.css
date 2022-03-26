@@ -1,5 +1,6 @@
+
+
 :root {
-	/* Colores */
 	--dark-orange: #E17726;
 	--soft-orange: #F5841F;
 	--soft-blue: #204CBF;
@@ -99,7 +100,7 @@ header h1 {
     box-shadow: 0px 0px 3px var(--just-black);
 }
 
-.site-card--cryptos .site-card--card p {
+.site-card--card p {
     font-size: large;
     padding: 1rem;
     text-align: center;
@@ -110,6 +111,7 @@ header h1 {
 
 .site-card--description1 {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
     font-family: 'Inherit', sans-serif;
@@ -128,11 +130,12 @@ header h1 {
 
 .site-card--description2, .site-card--description1 {
     display: flex;
+    align-items: center;
     justify-content: center;
     font-size: 1.2rem;
     font-family: 'Inherit', sans-serif;
     font-weight: 100;
-    margin-top: 15rem;
+    margin-top: 4rem;
     text-shadow: 1.2px 1.2px 0.6px var(--soft-purple); 
     width: 100%;
 }
@@ -140,6 +143,7 @@ header h1 {
 .orangeLine {
     border-color: var(--dark-orange);
     height: 0.2rem;
+    margin-top: 1rem;
     margin-bottom: 5rem;
 }
 
@@ -164,15 +168,14 @@ header h1 {
 }
 
 .site-second--card {
-    height: 30%;
+    display: inline-block;
+    margin: 0 10%;
     margin-top: 1rem;
     margin-bottom: 3.4rem;
-    display:inline-block;
-    width: 90%;
     border-radius: 10px;
     background: #3216ac;
     box-shadow: 0px 0px 3px var(--just-black);
-    padding: 5% 5%;
+    padding: 5%;
 }
 
 .site-second--card p {
@@ -183,44 +186,44 @@ header h1 {
 }
 
 .site-second--card .bitcoin {
-    color: var(--soft-orange);
     text-shadow: none;
 }
 
 .site-second--card .ethereum {
-    color: var(--just-black);
     text-shadow: none;
 }
 .site-second--card .cardano {
-    color: var(--soft-blue);
     text-shadow: none;
 }
 .site-second--card .solana {
-    color: var(--soft-purple);
     text-shadow: none;
 }
 
 .site--button {
-    width: 68%;
-    max-width: 500px;
-    align-self: center;
     padding: 4%;
-    height: auto;
     border-radius: 10px;
     display: inline-block;
     justify-content: center;
-    margin: 3rem 0;
+    margin: 2.5rem 10%;
     background: linear-gradient(100deg, var(--soft-orange) 16.69%, var(--dark-purple) 100%);
     color: var(--just-white);
-    font-size: medium;
     box-shadow: 0px 0px 5px var(--just-black);
     text-shadow: 2px 2px 1px var(--soft-purple);
     font-weight: bolder;
     text-decoration: none;
     font-size: large;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 200ms linear;
 }
 
+.site--button:hover {
+    transform: scale(1.1);
+    transition: transform 200ms linear;
+}
+
+.site--button:active, #equalButton:active {
+    color: var(--soft-purple);
+}
 
 .site-second--text {
     font-size: small;
@@ -268,11 +271,11 @@ header h1 {
 
 .third-section--currency-card #message {
     font-size: small;
-    width: 70%;
     font-weight: bold;
     color: var(--just-white);
-    margin: 0rem 0rem 2rem 4rem;
+    margin: 1rem 10%;
     padding: 2%;
+    font-size: large;
 }
 
 .third-section--currency-card--bar {
@@ -282,8 +285,9 @@ header h1 {
     display: flex;
 }
 
-.third-section--currency-card--bar #currencies--input, .third-section--currency-card--bar #currencies--output {
+#currencies--input, #currencies--output {
     width: 27%;
+    margin: 10% 0%;
     margin-left: 4%;
     border-style: none;
     border-radius: 10px 0px 0px 10px;
@@ -291,23 +295,30 @@ header h1 {
     background: linear-gradient(180.8deg, var(--dark-orange) 16.69%, var(--soft-purple) 100%);
     height: auto;
     color: var(--just-white);
-    text-shadow: 2px 2px 1px var(--soft-purple);
     padding: 2%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    font-weight:900;
+    font-weight:500;
     font-size:1.5rem;
 }
 
+option {
+    background-color: var(--just-black);
+}
+
+#currencies--input::placeholder, #currencies--output::placeholder {
+    color: var(--just-white);
+    opacity: 0.6;
+}
+
 .third-section--currency-card--bar #amount, .third-section--currency-card--bar #result {
-    width: 75%;
     align-self: center;
-    height:auto;
+    width: 68%;
     border-style: none;
     background-color: var(--dark-purple);
-    text-align: center;
+    text-align:left;
     padding: 2%;
-    font-size: medium;
+    font-size: large;
     color:#dbd8e9;
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -316,17 +327,13 @@ header h1 {
 }
 
 #equalButton {
-    width: 68%;
-    max-width: 40px;
     align-self: center;
-    padding: 1.5%;
-    height: 4rem;
+    padding: 4%;
     border-radius: 20px;
     justify-content: center;
     margin: 3rem 0;
     background: linear-gradient(100deg, var(--soft-orange) 16.69%, var(--dark-purple) 100%);
     color: var(--just-white);
-    font-size: medium;
     box-shadow: 0px 0px 5px var(--just-black);
     text-shadow: 2px 2px 1px var(--soft-purple);
     font-weight: bolder;
@@ -338,7 +345,7 @@ header h1 {
 .third-section > p {
     margin-top: 6rem;
     color: var(--just-white);
-    font-size: smaller;
+    font-size: small;
     font-weight: 100;
     text-align: left;
     text-shadow: 0px 0px 3px var(--just-black);
@@ -367,14 +374,24 @@ footer {
     font-weight: 400;
 }
 
-.footer--links p {
+.footer--links h3 {
+    font-size: large;
     margin-bottom: 1.5rem;
 }
+
+.footer--links > div {
+    display: flex;
+    flex-direction: column;
+} 
+
 .footer--links a {
     font-weight: bold;
     color: var(--just-white);
     text-decoration: none;
+    margin: 2%;
+    transition: all 400ms linear;
 }
+
 
 .footer--by {
     font-size: large;
@@ -389,6 +406,7 @@ footer {
     padding: 0 2%;
     display: flex;
     text-align: left;
+    align-items: center;
 }
 
 .footer--github a {
@@ -397,6 +415,25 @@ footer {
     padding: 0.8%;
     color: var(--just-white);
     text-decoration: none;
+}
+
+.footer--github-button-profile:hover, .footer--github-button-repository:hover {
+    transform: scale(1.05);
+    transition: transform 400ms linear;
+}
+
+.footer--github-button-profile, .footer--github-button-repository {
+    transform: scale(1);
+    transition: transform 400ms linear;
+}
+
+.footer--links a:hover {
+    color: var(--just-black);
+    transition: all 400ms linear;
+}
+
+.footer--github-button-profile:active, .footer--github-button-repository:active, .footer--links a:active {
+    color: var(--soft-purple);
 }
 
 .footer--repository {
@@ -414,3 +451,4 @@ footer {
     color: var(--just-white);
     text-decoration: none;
 }
+

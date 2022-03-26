@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href= "./src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./src/css/tablet.css" media="screen and (min-width: 500px)">
+    <link rel="stylesheet" type="text/css" href="./src/css/desktop.css" media="screen and (min-width: 1000px)">
+    <title>Foxy Exchange</title>
+</head>
+<body>
+    <header>
+        <h1><i>Foxy Exchange</i></h1>
+    </header>
+    <hr class="blackLine">
+    <main>
+        <section class="site-card--cryptos">
+            <p class="main-exchange--subtitle"><u>swap, trade and exchange.</u></p>
+            <div class="site-card--logos"> <!--Cryptos-->
+                <img src="./devImgs/LITE.svg" alt ="lite coin image">
+                <img src="./devImgs/Bitcoin logo.svg" alt ="bitcoin image">
+                <img src="./devImgs/whiteEth.svg" alt = "eth image">
+            </div>
+            <article class="site-card--card">
+                <p>🦊 Welcome to Foxy exchange web site. 
+                    A place where you can buy and exchange Bitcoin without limits. 
+                </p>
+                <p>   
+                    🔥 Where money power is yours. 
+                </p>
+            </article>
+            <div class="site-card--logos"> <!--Cryptos-->
+                <img src="./devImgs/Ripple Logo.svg" alt ="xrp image">
+                <img src="./devImgs/neo.svg" alt ="neo image">
+                <img src="./devImgs/BinanceCoin.svg" alt ="binance image">
+            </div>
+            <div class="site-card--description1"> <!--first text-->
+                <article>
+                    <p>We offer users who are beggining 
+                        on this ecosystem a safe, 
+                        easy, simple and friendly 
+                        way to exachange cryptocurrences.</p>
+                        <hr class="orangeLine">
+                </article> 
+                <img src="./devImgs/ethLogo.svg" alt ="big eth logo"> 
+            </div>
+            <div class="site-card--description2"> <!--second text-->
+                <img src="./devImgs/Bitcoin logo.svg" alt ="big bitcoin logo">
+                <article>
+                    <p>Participate as internet user in the new crypto transformation. 
+                        Use your cash without intemedians. 
+                        No controls, no comisions. 
+                        Your cash is simply your cash.</p>
+                        <hr class="orangeLine">
+                </article>
+            </div>
+        </section> <!--purple section-->
+        <section class="site-second">
+            <div class="site-second--triangles">
+                <img src="./devImgs/upTriangle.svg" alt = "a triangle">
+                <img src="./devImgs/triangDown.svg" alt = "a triangle">
+                <img src="./devImgs/upTriangle.svg" alt = "a triangle">
+            </div>
+            <article class="site-second--card">
+                <p>💸Buy your first badges as 
+                    <b class="bitcoin">bitcoin, </b><b class="ethereum">ethereum, </b>
+                    <b class="cardano">cardano, </b>or <b class="solana">solana</b>  
+                    in only minutes and without restrictions.
+                </p>
+            </article>
+            <article class="site-second--card">
+                <p>💱 Change cryptocurrences without extra payments under secure. 
+                </p>
+            </article>
+            <a href="#exchangeButton" class="site--button"> 
+                ✨Go to Exchange✨  
+            </a>
+            <hr class="orangeLine">
+            <p class="site-second--text">As all innovation we are not excents to problems. Despite this, 
+                crypto ecosystem is being more stronger and trustworthy     
+            </p>
+            <blockquote>
+                <p class="site-second--text"><i>"You can't discover great oceans unless you have 
+                    the courage to lose sight of the shoreline" André Gide</i></p>
+            </blockquote>
+            <hr class="orangeLine">
+        </section> <!--cold standard section-->
+
+        <section class="third-section">
+            <div class="third-section--currency-card" id="app">
+                <h2>Exchange</h2>
+                <form oninput="input">
+                    <div class="third-section--currency-card--bar">
+                        <select id="currencies--input" name="input" v-model="symbolInput">
+
+                            <option v-for="currency in currencies">{{ currency.id }}</option>
+        
+                        </select>
+        
+                        <input id="amount" type="number" min="5" v-model="amount" required/>
+                        
+                    </div>
+
+                    <div class="third-section--currency-card--bar">
+                        <select id="currencies--output" name="output" v-model="symbolOutput">
+
+                            <option v-for="currency in currencies">{{ currency.id }}</option>
+                        
+                        </select>
+                        <output type="number" id="result">{{ result }}</output>
+                    </div>
+
+                    <a id="exchangeButton" onclick="exchangeCryptos()" class="site--button"> 
+                        <i>Change cryptos ✅</i>
+                    </a>    
+                    <p id ="message"></p>
+                </form>
+                
+            </div>
+            <p>
+                <b>
+                disclaimer: buy any cryptocurrence is legal. <br>
+                All your crypto transactions are store anonimate and publicly. <br>
+                You could verify in a system called Blockchain. 
+                </b>
+            </p>
+        </section> <!--high standard section-->
+    </main>
+    <footer>
+        <article class="footer--links">
+            <h3> More information: </h3>
+            <div>
+                <a target="_blank" href="https://bitcoin.org/files/bitcoin-paper/bitcoin_es_latam.pdf">📔 Bitcoin paper</a>
+                <a target="_blank" href="https://ethereum.org/en/whitepaper/">📕 Ethereum paper</a>
+            </div>
+        </article>
+        <h3 class="footer--by">
+            Developed by:
+        </h3>
+
+        <address>
+
+            <div class="footer--github">
+                <img src="./devImgs/github.svg" alt ="github logo">
+                <a target="_blank" href="https://github.com/augustobor" class="footer--github-button-profile">Augusto Borromeo</a>
+            </div>
+            
+            <div class="footer--repository">
+                <a target="_blank" href="https://github.com/augustobor/Foxy-Exchange" class="footer--github-button-repository">Go to repository</a>
+                <p><i>*Foxy Exchange 2021</i></p>
+            </div>
+
+        </address>
+        
+    </footer> <!--orange footer-->
+    <script src="./src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./src/app.js"></script>
+    <script type="./application/ld+json" src="./src/SEO.json"></script>
+</body>
+</html>
