@@ -28,8 +28,16 @@ header h1 {
     font-size: 3rem;
 }
 
+.third-section {
+    padding-bottom: 0;
+}
+
 .third-section--currency-card h2 {
-    font-size: 6rem;
+    font-size: 5rem;
+}
+
+.site-second--card {
+    width: 80%;
 }
 
 .third-section > p {
@@ -40,15 +48,26 @@ header h1 {
     margin: 12rem 0;
 }
 
+#equalButton {
+    font-size: xx-large;
+}
 
 
+.third-section--currency-card {
+    margin-top: 3rem;
+    width: 50%;
+}
 
 .third-section--currency-card--bar #currencies--input, .third-section--currency-card--bar #currencies--output,.third-section--currency-card--bar #amount,.third-section--currency-card--bar #result {
     font-size: xx-large;
 }
 
-footer p, footer .footer--by, footer .footer--github a, footer .footer--repository a, .footer--links > p {
+footer p, footer .footer--by, footer .footer--github a, footer .footer--repository a, .footer--links > h3 {
 	font-size: 3rem;
+}
+
+.footer--github img {
+    transform: scale(1.6);
 }
 
 .footer--links > a, .third-section--currency-card #message {
