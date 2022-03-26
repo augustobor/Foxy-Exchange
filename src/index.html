@@ -86,22 +86,24 @@
         </section> <!--cold standard section-->
 
         <section class="third-section">
-            <div class="third-section--currency-card">
+            <div class="third-section--currency-card" id="app">
                 <h2>Exchange</h2>
                 <div class="third-section--currency-card--bar">
-                    <input list="currencies" id="currencies--input"/>
+
+                    <input list="currencies" id="currencies--input" />
+
                     <datalist id="currencies">
-                        <option value="BTC"></opcion>
-                        <option value="ETH"></option>
-                        <option value="ADA"></option>
-                        <option value="SOL"></option>
+                        <ol v-for="currency in currencies" v-bind:key="currency.id">
+                            <option>{{ currency.id }}</option>
+                        </ol>
                     </datalist>
+                    
                     <input id="amount" type="number"/>
                 </div>
                 <!-- <img src="../devImgs/eq.svg" alt = "equal image"> -->
-                <a id="equalButton" onclick="showPrice()" class="site--button"> 
+                <!-- <a id="equalButton" onclick="showPrice()" class="site--button"> 
                     =
-                </a>
+                </a> -->
                 <div class="third-section--currency-card--bar">
                     <input list="currenciesOutput" id="currencies--output"/>
                     <datalist id="currenciesOutput">
@@ -110,7 +112,7 @@
                         <option value="ADA"></option>
                         <option value="SOL"></option>
                     </datalist>
-                    <p id="result">0</p>
+                    <p id="result" v-bind:key="result">{{ result }}</p>
                 </div>
                 <a id="exchangeButton" onclick="exchangeCryptos()" class="site--button"> 
                     <i>Change cryptos ✅</i>
@@ -144,6 +146,8 @@
         </div>
     </footer> <!--orange footer-->
     <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./app.js"></script>
     <script type="./application/ld+json" src="./SEO.json"></script>
 </body>
 </html>
