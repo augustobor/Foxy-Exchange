@@ -5,7 +5,7 @@ new Vue({
         
       return {
 
-        amount: undefined,
+        amount: 0,
         symbolInput: 'BTC',
         symbolOutput: 'ETH',
         currencies: [
