@@ -1,14 +1,17 @@
 
 
 :root {
-	--dark-orange: #E17726;
-	--soft-orange: #F5841F;
-	--soft-blue: #204CBF;
-	--dark-blue:#18066A;
-	--dark-purple: #680599;
-	--soft-purple: #9907B1;
-	--just-black: #292929;
-	--just-white:#F0F0F0;
+    --dark-purple: #23103A;
+    --blue-grey: #282D4F;
+    --saturate-orange: #FF6C00;
+    --deeper-blue: #010038;
+    --litecoin-blue: #537EC5;
+    --honey-orange: #F39422;
+    --newton-beige: #D49B54;
+    --purple-rain: #712B75;
+    --purple-berry: #46244C;
+    --just-white: #FAFAFA;
+    --just-black: #1C1C1C;
 }
 
 * {
@@ -33,7 +36,7 @@ header {
     text-align: center;
     justify-content: center;
     font-family: 'Alien Encounters', sans-serif;
-    background: linear-gradient(180.8deg, var(--dark-orange) 16.69%, var(--soft-purple) 100%);
+    background: var(--dark-purple);
     height: 12rem;
     width: 100%;
     max-height: 30%;
@@ -41,21 +44,13 @@ header {
 
 
 header h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-top: 1.2rem;
-    color: var(--just-white);
     font-weight: 500;
-    text-shadow: var(--just-black);
-    text-shadow: 4px 4px 1px var(--soft-purple);
+    color: transparent;
+    -webkit-text-stroke: 1px var(--saturate-orange);
 }
 
-
-.blackLine {
-    border-color:  var(--just-black);
-    border-style: none;
-    height: 0.6rem;
-    background-color: var(--just-black);
-}
 
 /*first secton*/
 
@@ -64,19 +59,16 @@ header h1 {
     width: 100%;
     padding: 4% 4%;
     display: inline-block;
-    background: radial-gradient( var(--dark-purple),#2E1078);
+    background: linear-gradient(180deg, var(--dark-purple) 16.69%, var(--deeper-blue) 100%);
     text-align: center;
-}
-
-.site-card--cryptos p {
-    color: var(--just-white)
 }
 
 
 .main-exchange--subtitle {
     margin: 1rem;
     font-size: 1.5rem;
-    text-shadow: 1.2px 1.2px 0.6px var(--soft-purple);
+    color: #9907B1;
+    text-shadow: 2px 2px 3px #1C1C1C;
 }
 
 
@@ -96,7 +88,7 @@ header h1 {
     width: 90%;
     max-width: 1000px;
     border-radius: 10px;
-    background: linear-gradient(145.8deg, var(--soft-purple) 16.69%, var(--dark-blue) 100%);
+    background: linear-gradient(145.8deg, var(--purple-rain) 16.69%, #18066A 100%);
     box-shadow: 0px 0px 3px var(--just-black);
 }
 
@@ -104,8 +96,9 @@ header h1 {
     font-size: large;
     padding: 1rem;
     text-align: center;
-    font-weight: bold;
+    font-weight: 300;
     margin: 3rem 0;
+    color: var(--just-white);
     text-shadow: 2px 2px 5px var(--just-black);
 }
 
@@ -113,18 +106,24 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     font-family: 'Inherit', sans-serif;
     font-size: 1.2rem;
     font-weight: 100;
-    text-shadow: 1.2px 1.2px 0.6px var(--soft-purple);
     margin-top: 3rem; 
 }
 
+.site-card--description1 article {
+    text-align: left;
+}
+
+.site-card--description2 article {
+    text-align: right;
+}
+
 .site-card--description1 article, .site-card--description2 article {
-    text-align: center;
     margin-top: 3rem;
     padding: 5% 2%;
+    color: var(--just-white);
 }
 
 
@@ -141,7 +140,8 @@ header h1 {
 }
 
 .orangeLine {
-    border-color: var(--dark-orange);
+    border-style: solid;
+    border-color: var(--honey-orange);
     height: 0.2rem;
     margin-top: 1rem;
     margin-bottom: 5rem;
@@ -155,16 +155,9 @@ header h1 {
     height: auto;
     padding: 4% 4%;
     width: 100%;
-    background: linear-gradient(145.8deg, var(--soft-blue) 16.69%, var(--soft-purple) 100%);
+    background: linear-gradient(180deg, var(--deeper-blue) 16.69%, var(--litecoin-blue) 100%);
     display: inline-block;
     text-align: center;
-}
-
-.site-second .site-second--triangles {
-    display: flex;
-    justify-content: center;
-    margin-top: 2.6rem;
-    margin-bottom: 5rem;
 }
 
 .site-second--card {
@@ -173,31 +166,17 @@ header h1 {
     margin-top: 1rem;
     margin-bottom: 3.4rem;
     border-radius: 10px;
-    background: #3216ac;
-    box-shadow: 0px 0px 3px var(--just-black);
+    background: linear-gradient(180deg, var(--purple-rain) 16.69%, #18066A 100%);
     padding: 5%;
 }
 
 .site-second--card p {
     font-size: medium;
-    font-weight:bold;
+    font-weight: 300;
     color: var(--just-white);
     text-shadow: 1.2px 1.2px 5px var(--soft-purple);
 }
 
-.site-second--card .bitcoin {
-    text-shadow: none;
-}
-
-.site-second--card .ethereum {
-    text-shadow: none;
-}
-.site-second--card .cardano {
-    text-shadow: none;
-}
-.site-second--card .solana {
-    text-shadow: none;
-}
 
 .site--button {
     padding: 4%;
@@ -205,7 +184,7 @@ header h1 {
     display: inline-block;
     justify-content: center;
     margin: 2.5rem 10%;
-    background: linear-gradient(100deg, var(--soft-orange) 16.69%, var(--dark-purple) 100%);
+    background: linear-gradient(100deg, #E17726 16.69%, #680599 100%);
     color: var(--just-white);
     box-shadow: 0px 0px 5px var(--just-black);
     text-shadow: 2px 2px 1px var(--soft-purple);
@@ -218,6 +197,7 @@ header h1 {
 
 .site--button:hover {
     transform: scale(1.1);
+    cursor: pointer;
     transition: transform 200ms linear;
 }
 
@@ -241,30 +221,31 @@ header h1 {
     height: auto;
     padding: 4% 4%;
     width: 100%;
-    background: linear-gradient(220.8deg, var(--dark-purple) 16.69%, var(--soft-orange) 100%);
+    background: linear-gradient(180deg, var(--litecoin-blue) 16.69%, #39447C 100%);
     display: inline-block;
     text-align: center;
 }
 
 .third-section--currency-card {
     height: 31%;
-    margin-top: 9rem;
+    margin-top: 2rem;
     display:inline-block;
     width: 90%;
     text-align: center;
     border-radius: 10px;
-    background: radial-gradient(var(--soft-purple),var(--dark-purple));
+    background: linear-gradient(145.8deg, var(--dark-purple) 16.69%, #12091D 100%);
     box-shadow: 0px 0px 3px var(--just-black);
+    margin-bottom: 10rem;
 }
 
 .third-section--currency-card h2 {
     font-size: x-large;
     display: inline-block;
-    width: 50%;
+    width: 70%;
     color: var(--just-white);
     border-radius: 7px;
-    background: linear-gradient(220.8deg, var(--dark-purple) 16.69%, var(--soft-purple) 100%);
-    margin: 2rem 2rem 2rem 4rem;
+    background-color: var(--purple-rain);
+    margin: 2rem 0rem;
     padding: 2%;
     box-shadow: 0px 0px 3px var(--just-black);
 }
@@ -292,7 +273,7 @@ header h1 {
     border-style: none;
     border-radius: 10px 0px 0px 10px;
     box-shadow: 0px 0px 3px var(--just-black);
-    background: linear-gradient(180.8deg, var(--dark-orange) 16.69%, var(--soft-purple) 100%);
+    background: linear-gradient(180.8deg, var(--purple-rain) 16.69%, #39163B 100%);
     height: auto;
     color: var(--just-white);
     padding: 2%;
@@ -326,30 +307,9 @@ option {
     text-shadow: 0px 0px 3px var(--just-black);
 }
 
-#equalButton {
-    align-self: center;
-    padding: 4%;
-    border-radius: 20px;
-    justify-content: center;
-    margin: 3rem 0;
-    background: linear-gradient(100deg, var(--soft-orange) 16.69%, var(--dark-purple) 100%);
-    color: var(--just-white);
-    box-shadow: 0px 0px 5px var(--just-black);
-    text-shadow: 2px 2px 1px var(--soft-purple);
-    font-weight: bolder;
-    text-decoration: none;
-    font-size: large;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.third-section > p {
-    margin-top: 6rem;
-    color: var(--just-white);
-    font-size: small;
-    font-weight: 100;
-    text-align: left;
-    text-shadow: 0px 0px 3px var(--just-black);
-
+form a#exchangeButton {
+    background: var(--purple-rain);
+    margin: 0;
 }
 
 /* footer  */
@@ -358,11 +318,19 @@ footer {
     display: inline-block;
     text-align: center;
     font-family: 'Inherit', sans-serif;
-    background: linear-gradient(180.8deg, var(--soft-orange) 16.69%, var(--just-black) 100%);
+    background: linear-gradient(180.8deg, #39447C 16.69%, var(--dark-purple) 100%);
     height: auto;
     width: 100%;
 }
 
+
+footer > p {
+    margin-top: 1rem;
+    margin: 2%;
+    color: var(--just-white);
+    font-size: x-small;
+    text-align: left;
+}
 
 .footer--links {
     padding: 3%;
@@ -389,7 +357,8 @@ footer {
     color: var(--just-white);
     text-decoration: none;
     margin: 2%;
-    transition: all 400ms linear;
+    width: 50%;
+    transition: all 200ms linear;
 }
 
 
@@ -419,17 +388,17 @@ footer {
 
 .footer--github-button-profile:hover, .footer--github-button-repository:hover {
     transform: scale(1.05);
-    transition: transform 400ms linear;
+    transition: transform 200ms linear;
 }
 
 .footer--github-button-profile, .footer--github-button-repository {
     transform: scale(1);
-    transition: transform 400ms linear;
+    transition: transform 200ms linear;
 }
 
 .footer--links a:hover {
-    color: var(--just-black);
-    transition: all 400ms linear;
+    color: var(--saturate-orange);
+    transition: all 200ms linear;
 }
 
 .footer--github-button-profile:active, .footer--github-button-repository:active, .footer--links a:active {

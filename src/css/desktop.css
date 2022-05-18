@@ -10,6 +10,11 @@ header h1 {
     font-size: 4rem;
 }
 
+.site-card--description1 article, .site-card--description2 article {
+    text-align: center;
+}
+
+
 
 .site-card--description1 article, .site-card--description2 article {
     margin: 0 15%;
@@ -33,6 +38,7 @@ header h1 {
 }
 
 .third-section--currency-card h2 {
+    width: 40%;
     font-size: 5rem;
 }
 
@@ -40,29 +46,26 @@ header h1 {
     width: 80%;
 }
 
-.third-section > p {
-    font-size: large;
-}
 
 .site-second--text {
     margin: 12rem 0;
 }
 
-#equalButton {
-    font-size: xx-large;
-}
-
 
 .third-section--currency-card {
-    margin-top: 3rem;
-    width: 50%;
+    width: 80%;
+    height: 60%;
+}
+.third-section--currency-card--bar{
+    width: 100%;
 }
 
 .third-section--currency-card--bar #currencies--input, .third-section--currency-card--bar #currencies--output,.third-section--currency-card--bar #amount,.third-section--currency-card--bar #result {
     font-size: xx-large;
+    margin: 2rem 0;
 }
 
-footer p, footer .footer--by, footer .footer--github a, footer .footer--repository a, .footer--links > h3 {
+footer .footer--by, footer .footer--github a, footer .footer--repository a, .footer--links > h3 {
 	font-size: 3rem;
 }
 
@@ -72,4 +75,5 @@ footer p, footer .footer--by, footer .footer--github a, footer .footer--reposito
 
 .footer--links > a, .third-section--currency-card #message {
     font-size: 2rem;
+    width: 20%;
 }
