@@ -24,11 +24,14 @@
 - Next introduce the cryptucurrency that you want to exchange. 
 - Finally touch the equal button and the button "exchange"
 
-## 🛠 Tools
+## 👨‍💻 Dev Tools
 
 - [![HTML](https://img.shields.io/badge/html-E34C26?style=for-the-badge&logo=html5&logoColor=F06529&labelColor=000000)]()
 - [![CSS](https://img.shields.io/badge/css-66D3FA?style=for-the-badge&logo=css3&logoColor=3C99DC&labelColor=D5F3FE)]()
 - [![JavaScript](https://img.shields.io/badge/JavaScript-F0DB4F?style=for-the-badge&logo=javascript&logoColor=F7DF1E&labelColor=323330)]()
+
+## 🎨 Design Tools
+
 - [![AdobeXD](https://img.shields.io/badge/adobeXD-2E001F?style=for-the-badge&logo=adobeXD&logoColor=2E001F&labelColor=FF26BE)]()
 
 ## 💪 Another skills used 
