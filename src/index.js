@@ -12,8 +12,4 @@ function exchangeCryptos() {
         console.log(amount.value)
         currencyMessageID.innerHTML = "Please enter a valid number 😶"
     }
-
-
-    // amount.value = ""
-    // result.value = 0
 }
